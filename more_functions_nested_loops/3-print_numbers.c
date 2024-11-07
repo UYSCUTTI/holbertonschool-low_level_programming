@@ -1,17 +1,16 @@
 #include "main.h"
 
 /**
- * print_numbers - prints numbers from 0 to 9.
+ *print_numbers - prints all digit with nex line
+ *Return: nothing
  */
-
-
 void print_numbers(void)
 {
-	int n;
+	int count;
 
-	for (n = '0'; n <= '9'; n++)
-		{
-		putchar (n);
-		}
-	putchar ('\n');
+	for (count = 0; count <= 10; count++)
+		if (count < 10)
+	putchar(count + '0');
+		else
+	putchar('\n');
 }
