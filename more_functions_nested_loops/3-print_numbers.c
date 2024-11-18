@@ -1,16 +1,17 @@
 #include "main.h"
 
 /**
- *print_numbers - prints all digit with nex line
- *Return: nothing
+ * print_numbers - print the numbers from 0 to 9 to stdout
  */
 void print_numbers(void)
 {
-	int count;
+	char c = '0';
 
-	for (count = 0; count <= 10; count++)
-		if (count < 10)
-	putchar(count + '0');
-		else
+	while (c <= '9')
+	{
+		putchar(c);
+		c++;
+	}
+
 	putchar('\n');
 }
